@@ -41,6 +41,7 @@ $(function () {
     createPlatform(500, 200, 700, 20,"#b88e54")
     createPlatform(1300, 200, 200, 20,"#b88e54")
     createPlatform(1200, 450, 100, 20,"#b88e54")
+    createPlatform(1300, 520, 100, 20,"#b88e54")
     createPlatform(900, 400, 100, 20,"#b88e54")
     createPlatform(900, 400, 20, 100,"#b88e54")
     createPlatform(820, 480, 100, 20,"#b88e54")
@@ -49,26 +50,29 @@ $(function () {
     createPlatform(700, 320, 100, 20,"#b88e54")
     createPlatform(500, 700, 200, 20,"#b88e54")
     createPlatform(800, 700, 100, 20,"#b88e54")
-    createPlatform(985, 400, 20, 100,"#b88e54")
-    createPlatform
+    createPlatform(985, 400, 20, 80,"#b88e54")
+    createPlatform(100, 300, 20, 20,"#b88e54")
+    createPlatform(1300, 700, 100, 20,"#b88e54")
+    createPlatform(1100, 600, 100, 20,"#b88e54")
     
 
 
 
     // TODO 3 - Create Collectables
-    createCollectable("database", 728, 250)
     createCollectable("database", 50, 50)
+    createCollectable("database")
+    
     
     // TODO 4 - Create Cannons
-    createCannon("left", 100, 5000)
-    createCannon("left", 150, 5000)
-    createCannon("left", 200, 5000)
-    createCannon("left", 250, 5000)
-    createCannon("left", 300, 5000)
-    createCannon("left", 350, 5000)
-    createCannon("right", 790, .00000001, 1000,)
-    createCannon("bottom", 290, 750)
-    createCannon()
+    //createCannon("left", 100, 5000)
+    //createCannon("left", 150, 5000)
+    //createCannon("left", 200, 5000)
+    //createCannon("left", 250, 5000)
+    //createCannon("left", 300, 5000)
+    //createCannon("left", 350, 5000)
+    //createCannon("right", 790, .00000001, 1000,)
+    //createCannon("bottom", 290, 750)
+    //createCannon("left", 650, 1000)
 
     
     
