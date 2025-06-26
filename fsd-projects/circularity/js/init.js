@@ -8,7 +8,7 @@ var init = function (window) {
         canvas = app.canvas, 
         view = app.view,
         fps = draw.fps('#000');
-}
+
     
     window.opspark.makeGame = function() {
         
@@ -116,7 +116,7 @@ var init = function (window) {
         app.addUpdateable(window.opspark.game);
     }
 };
-
+}
 // DO NOT REMOVE THIS CODE //////////////////////////////////////////////////////
 if((typeof process !== 'undefined') &&
     (typeof process.versions.node !== 'undefined')) {
