@@ -27,7 +27,10 @@ $(document).ready(function () {
   };
 
   // This line produces most of the data array and stores it in the variable "dataShapes"
-  const dataShapes = generateShapeData();
+  const dataShapes = generateShapeData(
+ 
+  ) 
+  
   var currentIndex = 0;
 
   /////////////////////////////////////////////////
@@ -36,18 +39,45 @@ $(document).ready(function () {
 
   // TODO 1: create a new shape object and add it to the array
   
-
+  var shape = {
+  color: "blue",
+  shape: "cicle",
+  repeat: 3
+  }
+dataShapes.push(shape);
   // TODO 2: add a new property to all data shapes
-  
+
+for (let i = 0; i < dataShapes.length; i++) {
+  let currentShape = dataShapes[i];
+  if (currentShape.color === "red") {
+    currentShape.goodBehavior = "bounce";
+  } else if (currentShape.color === "blue") {
+    currentShape.goodBehavior = "blink";
+  } else {
+    currentShape.goodBehavior = "spin";
+  }
+}
 
   // TODO 3-a: add a function that handles the static display type
   
+  function handleStatic(data) {
+    setBackgroundWithObject(data);
+    animationDetails.displayType = 1;
+  }
 
   // TODO 4-a: add a function that handles the good display type
   
+  function handleGood(color, shape, repeat) {
+    setBackgroundWithSimple(color, shape, repeat);
+    animationDetails.displayType = 2;
+  }
 
   // TODO 5-a: add a function that handles the bad display type
   
+  function handleBad(data, repeat) {
+    setBackgroundWithSimple(data, repeat);
+    animationDetails.displayType = 3;
+  }
 
   /////////////////////////////////////////////////
   // BUTTON HANDLERS BELOW HERE (3-b, 4-b, 5-b) ///
@@ -56,22 +86,31 @@ $(document).ready(function () {
   function staticDisplay() {
     // TODO 3-b: call your handleStatic function
     
+    handleStatic(dataShapes[currentIndex]);
   }
 
   function goodDisplay() {
     // TODO 4-b: call your handleGood function
-    
+
+    var currentShape = dataShapes[currentIndex];
+    handleGood(currentShape.color, currentShape.shape, currentShape.repeat);
   }
 
   function badDisplay() {
     // TODO 5-b: call your handleBad function
-    
+
+    const currentShape = dataShapes[currentIndex];
+    handleBad({
+      color: currentShape.color,
+      shape: currentShape.shape,
+      repeat: currentShape.repeat
+    });
   }
 
   /////////////////////////////////////////////////
   // ALL OF YOUR CODE SHOULD GO ABOVE HERE ////////
   /////////////////////////////////////////////////
-
+  
   // This function generates objects for 26 of the necessary 27 entries into the dataShapes array that is used for most of this program
   function generateShapeData() {
     const data = [];
