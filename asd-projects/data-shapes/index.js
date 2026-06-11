@@ -100,13 +100,9 @@ for (let i = 0; i < dataShapes.length; i++) {
   function badDisplay() {
     // TODO 5-b: call your handleBad function
 
-    const currentShape = dataShapes[currentIndex];
-    const repeat = currentShape.repeat;
-    handleBad({
-      color: currentShape.color,
-      shape: currentShape.shape,
-      repeat: currentShape.repeat
-    });
+    var currentShape = dataShapes[currentIndex];
+    var repeat = currentShape.repeat;
+    handleBad(currentShape, repeat);
   }
 
   /////////////////////////////////////////////////
