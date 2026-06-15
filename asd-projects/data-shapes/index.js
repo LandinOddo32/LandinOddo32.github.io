@@ -76,7 +76,7 @@ for (let i = 0; i < dataShapes.length; i++) {
   
   function handleBad(data, repeat) {
     repeat += 1;
-    setBackgroundWithSimple(data, repeat);
+    setBackgroundWithMixed(data, repeat);
     animationDetails.displayType = 3;
   }
 
