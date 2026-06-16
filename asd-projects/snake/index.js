@@ -187,7 +187,7 @@ function hasCollidedWithApple() {
    if (snake.head.row === apple.row && snake.head.column === apple.column)
 
 {return true;}
- if (snake.head.row != apple.row && snake.head.column != apple.columns)
+ if (snake.head.row != apple.row && snake.head.column != apple.column)
   {return false;}
 }
 
