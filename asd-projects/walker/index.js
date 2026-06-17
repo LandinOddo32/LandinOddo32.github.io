@@ -117,13 +117,13 @@ function handleKeyUp(event) {
     if (walker.x < 0) {
       walker.x -= walker.speedX
     }
-    if (walker.x > $("#board").width()) {
+    if (walker.x > $("#board").width() - $("#walker").width()) {
       walker.x -= walker.speedX
     }
     if (walker.y < 0) {
       walker.y -= walker.speedY
     }
-    if (walker.y > $("#board").height()) {
+    if (walker.y > $("#board").height() - $("#walker").height()) {
       walker.y -= walker.speedY
     }
     
