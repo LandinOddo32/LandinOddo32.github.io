@@ -118,7 +118,7 @@ function handleKeyUp(event) {
       walker.x -= walker.speedX
     }
     if (walker.x > $("#board").width()) {
-      waler.x -= walker.speedX
+      walker.x -= walker.speedX
     }
     if (walker.y < 0) {
       walker.y -= walker.speedY
