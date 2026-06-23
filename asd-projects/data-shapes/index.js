@@ -41,7 +41,7 @@ $(document).ready(function () {
   
   var shape = {
   color: "blue",
-  shape: "cicle",
+  shape: "circle",
   repeat: 3
   }
 dataShapes.push(shape);
