@@ -32,7 +32,7 @@ applyFilterNoBackground(reddify);
 /////////////////////////////////////////////////////////
 
 // TODO 1, 2, 3 & 5: Create the applyFilter function here
-function applyFilter(){
+function applyFilter(filterFunction) {
   for (let i = 0; i < image.length; i++) {
   for (let j = 0; j < image[i].length; j++) {
     let pixel = image[i][j];
